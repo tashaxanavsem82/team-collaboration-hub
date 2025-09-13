@@ -1,6 +1,6 @@
 {
   "name": "team-collaboration-hub",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A platform for remote team collaboration",
   "main": "index.js",
   "scripts": {
