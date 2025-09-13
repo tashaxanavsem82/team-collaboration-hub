@@ -13,7 +13,7 @@ app.use(express.static('public'));
 
 // Health check route
 app.get('/health', (req, res) => {
-  res.status(200).json({ message: 'OK', version: '1.0.2' });
+  res.status(200).json({ message: 'OK', version: '1.0.3' });
 });
 
 io.on('connection', (socket) => {
