@@ -13,10 +13,10 @@ app.use(express.static('public'));
 
 // Health check route
 app.get('/health', (req, res) => {
-  res.status(200).json({ message: 'OK', version: '1.0.3' });
+  res.status(200).json({ message: 'OK', version: '1.0.4' });
 });
 
-io.on('connection', (socket) => {
+oi.on('connection', (socket) => {
   console.log('New client connected');
   socket.on('disconnect', () => {
     console.log('Client disconnected');
