@@ -11,6 +11,11 @@ const io = socketIo(server);
 
 app.use(express.static('public'));
 
+// Health check route
+app.get('/health', (req, res) => {
+  res.status(200).send('OK');
+});
+
 io.on('connection', (socket) => {
   console.log('New client connected');
   socket.on('disconnect', () => {
